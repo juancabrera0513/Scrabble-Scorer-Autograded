@@ -47,13 +47,13 @@ function vowelBonusScorer(word) {
    let score = 0;
  
    for (let char of word) {
-     if (vowels.includes(char)) {
-       score += 3;
-     } else if (/[A-Z]/.test(char)) {
-       score += 1;
-     }
-   }
-   return score;
+    if (vowels.includes(char)) {
+      score += 3;
+    } else {
+      score += 1;
+    }
+  }
+  return score;
 }
 
 function scrabbleScorer(word) {
